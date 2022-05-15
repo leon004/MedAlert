@@ -1,0 +1,57 @@
+<hr>
+<section class="service-section shape-style-one section-gap grey-bg">
+    <div class="container">
+
+        <div class="section-title text-center">
+
+          <h2 class="title mb-4">Pendiente:​</h2>
+        </div>
+
+
+    </div>
+
+
+    <div class="container">
+        <div class="row align-items-center justify-content-between">
+            <div class="col-xl-12 col-lg-12 col-md-12 order-2 order-md-1">
+                <div class="video-text">
+                    <div  class="section-title left-border">
+
+
+
+                        <section class="team-section ">
+                            <div class="container">
+
+
+                                <!-- Team Boxes -->
+                                <ngx-slick-carousel #slickModal="slick-carousel" [config]="settings" class="row">
+                                    <div ngxSlickItem class="col-lg-3" *ngFor="let item of brands">
+                                        <div class="team-member">
+                                            <div class="member-picture-wrap">
+                                                <div class="member-picture">
+                                                    <img id="partner-img" [src]="item.img" [alt]="item.name">
+                                                    <div class="social-icons">
+                                                        <a routerLink="{{item.url}}" *ngFor="let item of item.social">
+                                                            <i [class]="item.icon"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </ngx-slick-carousel>
+                            </div>
+                        </section>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+</section>

@@ -1,0 +1,99 @@
+
+.little-title{
+    color: white; font-weight: 700; font-size: 25px;
+  }
+
+
+
+  .little-title:before,
+  .little-title:after {
+  background-color: white;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 30%;
+  }
+
+  .little-title:before {
+  right: 0.4em;
+  margin-left: -50%;
+  }
+
+  .little-title:after {
+  left: 0.4em;
+  margin-right: -50%;
+  }
+
+  .counter-cards{
+    background-color: white; border-radius: 10px; width: 100%;
+
+  }
+
+
+  .progress-image{
+    background-image: url('../../../../../assets/img/tp/h2.png');
+    background-size: 80% 80%;
+    background-repeat: no-repeat;
+    background-position: left center;
+  }
+
+  .progress-section .progress-text{
+    background-color: #ffda00;
+    }
+
+    .pricing-section .pricing-card.price-card-two::after{
+      content: unset;
+    }
+
+
+    .pricing-section .pricing-card::before{
+      background-color: #ffda00 ;
+    }
+
+
+    .pricing-section .pricing-card .price-header{
+      margin-bottom: 0px;
+    }
+
+    .pricing-section .pricing-card .pricing-feature{
+      padding-top: 10px;
+
+    }
+
+
+    .pricing-section{
+      padding-top: 0;
+    }
+
+
+.report{
+ cursor: pointer;
+}
+
+.report:hover{
+  background-color: #5006f2;
+  transition: .5s;
+  color: #ffda00;
+  border-radius: 5px;
+
+}
+
+.report:hover h3 a{
+ color: white;
+}
+
+
+.book-icon-img{
+  content: url('../../../../../assets/icons/libro-b.svg');
+}
+
+#download-item:hover .book-icon-img{
+  content: url('../../../../../assets/icons/libro-y.svg');
+}
+
+.counter{
+  color: #5413E9
+                        ; font-size: 80px;
+}

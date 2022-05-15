@@ -1,0 +1,23 @@
+footer{
+    background-color: #7636ff;
+    color: white;
+}
+
+p,li> a ,li,span{
+    color: white;
+
+}
+
+footer .footer-copyright .back-to-top{
+    background-color: white !important;
+    border: 2px solid white
+}
+
+.back-to-top:hover .fa-angle-up{
+    color: #ffda00;
+}
+
+.fa-phone, .fa-envelope-open, .fa-map-marker-alt, .fa-hand-point-up, .fa-info{
+    color: #ffda00 !important;
+
+}

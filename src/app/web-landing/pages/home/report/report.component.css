@@ -1,0 +1,131 @@
+
+.example-card {
+  max-width: 500px;
+  justify-content: center;
+  margin-left: 23%;
+  align-items: center;
+}
+
+.sick{
+  max-width: 500px;
+  background-color: rgb(155, 204, 155);
+
+}
+.tratamiento{
+  max-width: 500px;
+  background-color: rgb(236, 238, 93);
+  margin-left: 10%;
+}
+.alergia{
+  background-color: rgb(230, 89, 89);
+  max-width: 500px;
+
+}
+.parent {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  }
+
+  .div1 { grid-area: 1 / 1 / 4 / 4; }
+  .div2 { grid-area: 1 / 4 / 3 / 6;
+  }
+  .div3 { grid-area: 3 / 4 / 6 / 6;
+  padding-top: 10px; }
+  .div4 { grid-area: 4 / 1 / 6 / 4;
+   }
+
+
+.sub-link a:hover{
+    color: #5413E9;
+}
+
+
+.little-title{
+    color: white; font-weight: 700; font-size: 25px;
+  }
+  .example-card {
+    max-width: 400px;
+    margin-bottom: 8px;
+  }
+
+
+
+  .little-title:before,
+  .little-title:after {
+  background-color: white;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 30%;
+  }
+
+  .little-title:before {
+  right: 0.4em;
+  margin-left: -50%;
+  }
+
+  .little-title:after {
+  left: 0.4em;
+  margin-right: -50%;
+  }
+
+
+  .modal-backdrop {
+    z-index: 100000 !important;
+  }
+
+  .modal-dialog {
+    z-index: 100001 !important;
+  }
+
+  ngb-modal-window{
+    z-index: 100001 !important;
+
+  }
+
+
+#report-section{
+  background-color: #14212B;
+  padding-bottom: 100px;
+}
+
+.features-section .features-card {
+box-shadow: unset;
+}
+
+.service-boxes .service-box::after{
+  content: unset;
+}
+
+.card-rep-what-icon{
+  content: url('../../../../../assets/icons/lupa-b.svg');
+}
+
+.features-section .features-card.feature-one:hover .card-rep-what-icon {
+  content: url('../../../../../assets/icons/lupa-w.svg');
+
+}
+
+.card-rep-what:hover .card-rep-what-icon {
+
+  content: url('../../../../../assets/icons/lupa-y.svg') !important;
+
+}
+
+.card-rep-what:hover .card-rep-what-text:hover{
+  color: #ffda00 !important  ;
+}
+
+.btn-tp{
+  justify-content: center;
+}
+
+.c-title{
+  color: #5413E9;
+}

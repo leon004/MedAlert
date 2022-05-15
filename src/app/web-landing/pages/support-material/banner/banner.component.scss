@@ -1,0 +1,15 @@
+.main-title-img{
+
+    width: 100px;
+}
+
+@media (min-width: 320px) and (max-width: 769px) {
+    #text-section{
+        margin-top: 50px;
+    }
+    .row{
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+

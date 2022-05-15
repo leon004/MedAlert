@@ -1,0 +1,64 @@
+<section style="background-color: white;" class="service-details">
+    <div class="container">
+        <div class="section-title text-center both-border mb-30">
+            <!-- <span class="title-tag">Tipos de Aliados</span> -->
+            <h2 style="padding-top: 50px;" class="title">ARTÍCULOS E INVESTIGACIÓN ​</h2>
+          </div>
+
+        <div class="row align-items-startp">
+            <!-- Dettails Content -->
+            <div class="col-lg-12 sidebar">
+                <!-- Contact Widget -->
+                <div (click)="goToURL(item.url)"  *ngFor="let item of materialLinks | slice: (currentPage-1) * 3 : (currentPage-1) * 3 + 3" class="mb-2 widget contact-widget link-card">
+                    <div style="display: flex; align-items: center;">
+                        <div *ngIf="!item.image" style="width: 100px; height: 100px; border-radius: 50%;  display: flex; align-items: center; overflow: hidden; border:1px white solid
+                        ;">
+                            <img style="width:  80px; height: 80px;" src="../../../../../assets/img/tp/h2.png">
+
+                        </div>
+                        <div  *ngIf="item.image" style="width: 100px; height: 100px; border-radius: 50%;  display: flex; align-items: center; overflow: hidden; border:1px white solid
+                        ;">
+
+
+                        </div>
+                        <h4 class="widget-title ml-2"><strong>
+
+                            {{item.title}}
+                        </strong>
+                    </h4>
+                    </div>
+                    <div class="feature-boxes row justify-content-center">
+                        <div class="col-lg-12">
+                            <div class="row">
+                                <div class="col-12">
+                                    <h4>Descripción:  {{item.id}}</h4>
+                                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus deleniti sed, vitae eos debitis odio officia, tenetur repellendus facilis hic illo magnam nemo veritatis inventore illum quas doloremque suscipit excepturi.</p>
+                                </div>
+                                <div class="col-12" style="display: flex; justify-content: end;">
+                                    <img id="arrow" src="../../../../../assets/icons/right-arrow-mix.svg">
+
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-12" style="display: flex; justify-content: center;">
+
+                <ngb-pagination class="paginator" [size]="size"  [(page)]="currentPage" [pageSize]="3" [collectionSize]="materialLinks.length"></ngb-pagination>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+
+

@@ -1,0 +1,23 @@
+[
+    {
+        "id":0,
+        "title":"Paciente​",
+        "icon":"../../../../../assets/icons/candado-b.svg",
+        "hoverIcon":"",
+        "shortdesc":"Llevar control de tus tratamientos medicos, dieta, información para emergencias y un historial clinico.​"
+    },
+    {
+        "id":1,
+        "title":"Hospital",
+        "icon":"../../../../../assets/icons/equipo-b.svg",
+        "hoverIcon":"",
+        "shortdesc":"Organizaciones, instituciones y empresas para que puedan llevar control de todos sus pacientes y también poder tener los servicios para los medicos​"
+    },
+    {
+        "id":2,
+        "title":"Medico",
+        "icon":"../../../../../assets/icons/one-person-b.svg",
+        "hoverIcon":"",
+        "shortdesc":"Medicos que pueden tener un perfil con sus especialidades posibilidad de agendar citas, y llevar control personalizado de pacientes​"
+    }
+]

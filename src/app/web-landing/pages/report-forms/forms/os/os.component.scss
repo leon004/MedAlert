@@ -1,0 +1,55 @@
+mat-card{
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+}
+.row{
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+.title{
+    color: white;
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.form-description{
+    color: white;
+}
+
+
+
+input{
+    height: 25px;
+}
+
+
+#form-container{
+    margin-left: 10%; margin-right: 10%
+}
+
+#main-text-section{
+    display: flex;
+    flex-direction: column;
+}
+
+#submit-btn{
+    color: white;
+}
+
+@media (min-width: 320px) and (max-width: 769px) {
+    #form-container{
+        margin-left: 0; margin-right: 0
+    }
+    
+    #main-text-section{
+        align-items: center;
+    }
+    #submit-btn{
+        width: 100%;
+    }
+}

@@ -1,0 +1,163 @@
+<section>
+    <mat-card id="form-container">
+        <section class="contact-section contact-page">
+            <div class="form-head row">
+                <div  class="form-img-section col-lg-4 col-md-1 col-sm-12">
+                    <img class="form-img" style="width: 50%;" src="../../../../../../assets/img/tp/MedAlert.jpg" />
+                </div>
+                <div class="col-lg-8 col-sm-12 form-text-section ">
+                    <div id="main-text-section">
+                        <h2 class="title text-center">Agendar cita medica</h2>
+                    <p style="max-width: 95%;" class="form-description mb-2 text-center">
+                        Agendar cita para chequeo medico de rutina
+                    </p>
+                </div>
+                </div>
+            </div>
+
+            <div *ngIf="!isSending && !hasSendIt"  class="container">
+                <div class="row no-gutters justify-content-center">
+                    <div class="col-10 mt-3">
+                        <form (ngSubmit)="onSubmit($event)" class="row" [formGroup]="form">
+                            <div class="col-12">
+                                <mat-label>Asunto de la cita
+                                </mat-label>
+                                <mat-form-field style="width: 100%">
+
+                                    <input matInput placeholder="Escriba el asunto de la cita"
+
+
+                                </mat-form-field>
+
+                            </div>
+
+                            <div class="col-lg-4 col-12">
+                                <mat-label>2.- Nombre del paciente:
+                                </mat-label>
+                                <mat-form-field style="width: 100%">
+
+                                    <input matInput placeholder="Escriba el nombre del paciente"
+                                         />
+
+                                </mat-form-field>
+
+                            </div>
+                            <div class="col-lg-4 col-12">
+                                <mat-label>3.- Apellido del paciente:
+                                </mat-label>
+                                <mat-form-field style="width: 100%">
+
+                                    <input matInput placeholder="Escriba el apellido del paciente"
+                                         />
+
+                                </mat-form-field>
+
+                            </div>
+
+
+                            <div class="col-lg-4 col-12">
+                                <mat-label>4.- Edad del paciente
+                                </mat-label>
+                                <mat-form-field style="width: 100%">
+
+                                    <input matInput placeholder="Escriba la edad aproximada del paciente"
+                                         />
+
+                                </mat-form-field>
+
+                            </div>
+
+
+                            <div class="col-12">
+                                <mat-label>5.- Dirección donde desea realiar la cita:
+                                </mat-label>
+                                <div class="row">
+
+
+                                    <mat-form-field class="col-lg-6 col-12" appearance="default">
+                                        <mat-label>Estado</mat-label>
+                                        <mat-select  >
+                                            <mat-option *ngFor="let state of states" [value]="state.nombre">
+                                                {{state.nombre}}</mat-option>
+
+                                        </mat-select>
+                                    </mat-form-field>
+
+                                    <mat-form-field class="col-lg-6 col-12" appearance="default">
+                                        <mat-label>Municipio</mat-label>
+                                        <mat-select >
+                                            <mat-option *ngFor="let citie of cities" [value]="citie">
+                                                {{citie}}</mat-option>
+                                        </mat-select>
+                                    </mat-form-field>
+                                </div>
+
+
+                            </div>
+
+
+                            <div class="col-12">
+                                <mat-label>7.- Descripción de la cituacion de la consulta medica:
+
+                                </mat-label>
+                                <mat-form-field style="width: 100%">
+
+                                    <textarea matInput placeholder="Escriba la descripción de la situación"
+                                        [formControl]="form.controls['description']"></textarea>
+
+                                </mat-form-field>
+
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <mat-label>8.- Fecha de la cita: </mat-label>
+
+                                <mat-form-field class="example-full-width" appearance="fill">
+                                  <mat-label>Choose a date</mat-label>
+                                  <input matInput [matDatepicker]="picker">
+                                  <mat-hint>MM/DD/YYYY</mat-hint>
+                                  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                                  <mat-datepicker [dateClass]="dateClass" #picker></mat-datepicker>
+                                </mat-form-field>
+
+
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <mat-label>9.- Hora de la cita:
+
+                                </mat-label>
+                                <mat-form-field style="width: 100%">
+                                    <input matInput placeholder="Escriba la hora aproximada"
+                                         type="time">
+                                </mat-form-field>
+
+                            </div>
+                            <div class="col-lg-6 col-12">
+                                <mat-label>10.- ¿Quieres adjuntar algun material relacionado al padecimiento? (Imagen de la herida, analisis, medicamentos)
+
+                                </mat-label>
+                                <input type="file" (change)="uploadFile($event)">
+
+                            </div>
+
+
+                            <div class="col-12">
+
+                                <hr />
+                            </div>
+                            <div class="col-12 text-right">
+                                <button id="submit-btn" type="submit" color="accent"
+                                    mat-raised-button>Enviar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <section *ngIf="isSending" style="display: flex; justify-content: center; align-items: center;">
+                <mat-spinner [diameter]="40"></mat-spinner>
+
+            </section>
+            <app-thanks *ngIf="hasSendIt"></app-thanks>
+        </section>
+    </mat-card>
+</section>
+

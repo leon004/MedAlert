@@ -1,0 +1,14 @@
+h4{
+    margin: 0 !important;
+}
+
+.job-lists{
+    display: flex;
+    grid-gap: 0;
+}
+
+@media (min-width: 320px) and (max-width: 769px) {
+    .single-job{
+        margin-top: 30px;
+    }
+}

@@ -1,0 +1,49 @@
+[
+    {
+        "id": 1,
+        "linkText": "Inicio",
+        "child": false,
+        "link": ""
+    },
+    {
+        "id": 2,
+        "linkText": "Nuestros servicios",
+        "child": true,
+        "submenu": [
+            {
+                "id": 21,
+                "link": "/us",
+                "subLink": "what-is",
+                "linkText": "Datos del usuario"
+            },
+            {
+                "id": 21,
+                "link": "/us",
+                "subLink": "results",
+                "linkText": "Actividad fisica"
+            },
+            {
+                "id": 22,
+                "link": "/us",
+                "subLink": "categories",
+                "linkText": "Servicios personalizados"
+            }
+
+
+        ]
+    },
+    {
+        "id": 3,
+        "linkText": "Únete",
+        "child": false,
+        "link": "/join-us/types"
+    },
+
+    {
+        "id": 5,
+        "linkText": "Recursos medicos",
+        "child": false,
+        "link": "/support-material"
+
+    }
+]

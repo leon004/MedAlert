@@ -1,0 +1,23 @@
+
+li{
+    margin-left: 50px !important;
+}
+
+#home-btn{
+    cursor: pointer;
+    transition: ease 1s;
+}
+
+#home-btn:hover{
+transform: scale(1.2);
+transition: all 1s ease-out;
+}
+
+#bottom-btn{
+    display: flex; align-items: center; cursor: pointer;
+}
+
+#bottom-btn:hover{
+    transform: translate(10px);
+    transition: all 1s ease;
+}

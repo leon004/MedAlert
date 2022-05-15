@@ -1,0 +1,8 @@
+.section-gap{
+    padding-top: 0PX;
+    background-color: white;
+}
+
+.advanced-tab .tab-content .tab-text-block.with-left-circle::before, .advanced-tab .tab-content .tab-text-block.with-right-circle::before{
+    visibility: hidden;
+}

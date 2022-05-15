@@ -1,0 +1,35 @@
+[
+    {
+        "id":1,
+        "img":"assets/img/tp/run.png",
+        "title":"Mis pasos del dia",
+        "startValue":0,
+        "endValue":12560,
+        "details":[
+            "Has superado tu marca personal​",
+            "Superaste tu meta diaria"
+        ]
+    },
+    {
+        "id":2,
+        "img":"assets/img/tp/fire.png",
+        "title":"Kcal",
+        "startValue":0,
+        "endValue":347,
+        "masonry":"mt-30",
+        "details":[
+
+        ]
+    },
+    {
+        "id":3,
+        "img":"assets/img/tp/step.png",
+        "title":"Pasos del mes",
+        "startValue":0,
+        "endValue":86661,
+        "masonry":"mt-30",
+        "details":[
+
+        ]
+    }
+]

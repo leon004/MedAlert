@@ -1,0 +1,109 @@
+<section >
+  <div class="container">
+    <!-- Section Title -->
+    <div class="section-title text-center both-border mb-30 pt-3">
+      <span class="little-title">Reporte Anónimo</span>
+      <h2  class="title">INFORMACIÓN DEL USUARIO​</h2>
+    </div>
+    <div>
+
+
+<div class="parent">
+  <div class="div1">
+     <mat-card class="example-card">
+      <mat-card-title-group>
+        <mat-card-title>Zenitsu Agatsuma</mat-card-title>
+        <mat-card-subtitle>Edad 16 años</mat-card-subtitle>
+        <img mat-card-lg-image src="https://i.pinimg.com/736x/81/38/50/813850fb3f6ab05b0210977a5dd52986.jpg" >
+      </mat-card-title-group>
+      <mat-card-content>
+        {{longText}}
+      </mat-card-content>
+  </mat-card>
+
+</div>
+
+  <div class="div2"> <mat-card class="sick">
+    <mat-card-title>Enfermedades:
+      <mat-card-subtitle>
+
+      </mat-card-subtitle>
+      <mat-card-content>
+        <li>Diabetes</li>
+        <li>Hipertension</li>
+      </mat-card-content>
+    </mat-card-title>
+  </mat-card>
+</div>
+
+  <div class="div3">  <mat-card class="alergia">
+    <mat-card-title>Alergias:
+      <mat-card-subtitle>
+        Cronicas
+      </mat-card-subtitle>
+      <mat-card-content>
+        <li>Acido acetilsalicílico</li>
+        <li>Ibuprofeno</li>
+      </mat-card-content>
+    </mat-card-title>
+  </mat-card></div>
+
+  <div class="div4">
+     <mat-card class="tratamiento">
+    <mat-card-title>Tratamiento:
+      <mat-card-subtitle>
+        Cada 12 hrs
+      </mat-card-subtitle>
+      <mat-card-content>
+        <li>Diabetes</li>
+        <li>Hipertension</li>
+      </mat-card-content>
+    </mat-card-title>
+  </mat-card> </div>
+  </div>
+
+    </div>
+    <!-- Services Boxes -->
+    <div class="row service-boxes justify-content-center">
+      <div
+        class="col-lg-4 col-md-6 col-sm-8 col-10 col-tiny-12 features-section"
+        *ngFor="let item of reportTypes | slice: 0:3"
+      >
+      <div class="service-box text-center  features-card feature-one ">
+        <div style="min-height: 180px;">
+
+          <div class="icon">
+            <img [src]="item.shadowicon" [alt]="item.title" />
+          </div>
+          <h3 class="c-title">{{ item.title }}</h3>
+        </div>
+
+        <div class="sub-link">
+          <div  class="card-rep-what" (click)="openWhatIsModal(item.id)" class="service-link" style="display: flex; align-items: center; justify-content: center; cursor: pointer;">
+            <img  class="card-rep-what-icon" width="30px">
+            <p class="card-rep-what-text" style="font-size: 20px">¿Qué es?</p>
+            <!-- <i class="fal fa-long-arrow-right"></i> -->
+          </div>
+
+        </div>
+        <hr />
+
+
+        <a routerLink="{{item.form_link}}" class="btn-tp btn-tp-yellow first-yellow">
+          <span class="btn-icon-yellow"></span>
+          Acerca de
+        </a>
+      </div>
+      </div>
+    </div>
+  </div>
+  <div class="dots-line">
+ <!-- <div  style="background-color: #FDD800; width: 367px; height: 873px;" alt="img">
+        </div>  -->
+  </div>
+
+
+
+</section>
+
+

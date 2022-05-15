@@ -1,0 +1,70 @@
+[
+    {
+        "id":1,
+        "img":"assets/img/tp/partners/AEBBA.png",
+        "title":"company name"
+    },
+    {
+        "id":2,
+        "img":"assets/img/tp/partners/alesca.png",
+        "title":"company name"
+    },
+    {
+        "id":3,
+        "img":"assets/img/tp/partners/alumbra.png",
+        "title":"company name"
+    },
+    {
+        "id":4,
+        "img":"assets/img/tp/partners/corporativa-de-fundadores.png",
+        "title":"company name"
+    }
+    ,
+    {
+        "id":5,
+        "img":"assets/img/tp/partners/educandoenred.png",
+        "title":"company name"
+    }
+    ,
+    {
+        "id":6,
+        "img":"assets/img/tp/partners/escuela_en_comunidad.png",
+        "title":"company name"
+    }
+    ,
+    {
+        "id":7,
+        "img":"assets/img/tp/partners/fundacion-gdl-comunity.png",
+        "title":"company name"
+    }
+    ,
+    {
+        "id":8,
+        "img":"assets/img/tp/partners/h2.png",
+        "title":"company name"
+    }
+    ,
+    {
+        "id":9,
+        "img":"assets/img/tp/partners/pas.png",
+        "title":"company name"
+    }
+    ,
+    {
+        "id":10,
+        "img":"assets/img/tp/partners/scotiabank.png",
+        "title":"company name"
+    }
+    ,
+    {
+        "id":11,
+        "img":"assets/img/tp/partners/sipinna.png",
+        "title":"company name"
+    }
+    ,
+    {
+        "id":12,
+        "img":"assets/img/tp/partners/stratosphere.png",
+        "title":"company name"
+    }
+]

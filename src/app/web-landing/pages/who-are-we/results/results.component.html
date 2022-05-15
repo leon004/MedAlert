@@ -1,0 +1,57 @@
+<div class="pricing-section pt-100 pb-70">
+    <div class="container">
+
+        <div class="section-title text-center both-border mb-30 pt-3">
+            <h2 style="color: #5006f2
+                ;" class="title">RESULTADOS</h2>
+            <p style="font-size: 23px; padding-top: 25px; " class="title">Mi actividad fisica
+            </p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-6" *ngFor="let item of results">
+                <div class="pricing-card price-card-two">
+                    <div class="price-header text-center">
+                        <div style="min-height: 95px;">
+
+                            <h2>{{item.title}}</h2>
+                        </div>
+                        <!-- <h3><sup>$</sup>30<span>/Month</span></h3> -->
+                        <img style="color: white; border-radius: 50%; border: 5px solid white; width: 60%;"
+                            [src]="item.img" alt="">
+                    </div>
+                    <div class="theme-button text-center">
+                        <h2 counto class="counter"  [step]="10" [countTo]="item.endValue" [countFrom]="0" [duration]="10" (countoChange)="a[item.id] = $event" (countoEnd)="onCountoEnd()">
+                            {{a[item.id] | number: '1.0-0'}}</h2>
+                    </div>
+                    <div class="pricing-feature" style="min-height: 120px;">
+                        <ul>
+                            <li *ngFor="let detail of item.details" style="display: flex; align-items: center;">
+                                <img class="mr-1" width="20px" src="../../../../../assets/icons/check-y.svg">
+                                <p class="mt-1"> {{detail}}</p>
+                            </li>
+
+                        </ul>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

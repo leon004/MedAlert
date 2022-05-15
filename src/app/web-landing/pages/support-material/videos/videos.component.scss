@@ -1,0 +1,18 @@
+::ng-deep .pagination{
+justify-content: center !important;
+margin-top: 30px;
+}
+
+.latest-post-box{
+
+}
+
+.title{
+    min-height: 90px;
+}
+
+::ng-deep  .page-item.active .page-link{
+background-color:#5006F2 ;
+border-color: unset;
+box-shadow: unset !important;
+}

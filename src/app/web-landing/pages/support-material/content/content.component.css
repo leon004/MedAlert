@@ -1,0 +1,12 @@
+#arrow{
+    width: 50px;
+}
+
+.link-card{
+    cursor: pointer;
+
+}
+
+.link-card:hover #arrow{
+    transform: scale(1.3);
+}

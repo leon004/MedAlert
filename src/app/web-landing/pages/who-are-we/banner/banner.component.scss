@@ -1,0 +1,90 @@
+.section-gap{
+    padding-top: 0px;
+    background-color: white;
+}
+
+.wcu-section .wcu-video::after{
+    visibility: hidden;
+}
+
+li{
+    display: block !important;
+     width: 100% !important;
+     margin-bottom: 3%;
+}
+
+i{
+    color: #5006f2
+    ;
+}
+
+.main-title-img{
+
+}
+
+#c-icon-google{
+    content: url('../../../../../assets/icons/google-b.svg');
+}
+#c-icon-msoft{
+    content: url('../../../../../assets/icons/msoft-b.svg');
+}
+#c-icon-facebook{
+    content: url('../../../../../assets/icons/facebook-b.svg');
+}
+#c-icon-tiktok{
+    content: url('../../../../../assets/icons/tiktok-b.svg');
+}
+
+#first-card:hover #c-icon-msoft{
+    content: url('../../../../../assets/icons/msoft-y.svg');
+
+}
+#first-card:hover #c-icon-google{
+    content: url('../../../../../assets/icons/google-y.svg');
+
+}
+#first-card:hover #c-icon-facebook{
+    content: url('../../../../../assets/icons/facebook-y.svg');
+
+}
+#first-card:hover #c-icon-tiktok{
+    content: url('../../../../../assets/icons/tiktok-y.svg');
+
+}
+
+#c-icon-flag{
+    content: url('../../../../../assets/icons/flag-b.svg');
+    margin-top: 30px;
+}
+
+#second-card:hover #c-icon-flag{
+    content: url('../../../../../assets/icons/flag-y.svg');
+
+}
+
+#c-icon-house{
+    content: url('../../../../../assets/icons/casa-b.svg');
+    margin-top: 30px;
+}
+
+#third-card:hover #c-icon-house{
+    content: url('../../../../../assets/icons/casa-y.svg');
+
+}
+
+p{
+    font-size: 20px !important;
+}
+
+
+
+@media (min-width: 320px) and (max-width: 769px) {
+    .service-section.shape-style-one::after{
+        display: none;
+    }
+    .service-section.shape-style-one::before, .service-section.shape-style-one::after{
+        display: none;
+    }
+}
+
+
