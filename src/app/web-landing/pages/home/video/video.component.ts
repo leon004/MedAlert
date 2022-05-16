@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
-import brands from '../../../data/brands.json';
+
 import { YtVideoModalComponent } from './yt-video-modal/yt-video-modal.component';
 
 @Component({
@@ -11,7 +11,7 @@ import { YtVideoModalComponent } from './yt-video-modal/yt-video-modal.component
 export class VideoComponent implements OnInit {
 
   constructor(private modalService: NgbModal) { }
-  public brands = brands;
+
   settings = {
     infinite: true,
     slidesToShow: 4,

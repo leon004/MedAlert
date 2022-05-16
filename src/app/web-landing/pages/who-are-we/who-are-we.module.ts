@@ -17,13 +17,13 @@ import { PdfViewerModule } from 'ng2-pdf-viewer';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { WhoAreWeComponent } from './who-are-we.component';
-import { AllysComponent } from './allys/allys.component';
+
 import { ResultsComponent } from './results/results.component';
 import { CountoModule }  from 'angular2-counto';
 
 
 @NgModule({
-  declarations: [TabsComponent, BannerComponent,ResultsComponent,TabsComponent,WhoAreWeComponent, AllysComponent],
+  declarations: [TabsComponent, BannerComponent,ResultsComponent,TabsComponent,WhoAreWeComponent],
   imports: [
     CommonModule,
     WhoAreWeRoutingModule,
@@ -37,7 +37,7 @@ import { CountoModule }  from 'angular2-counto';
     PdfViewerModule,
     MatFormFieldModule,
     MatSelectModule,
-    CountoModule 
+    CountoModule
   ]
 })
 export class WhoAreWeModule { }

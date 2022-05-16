@@ -1,5 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
-import instagram from '../../data/instagram.json';
+
 
 @Component({
   selector: 'app-footer',
@@ -17,13 +17,13 @@ export class FooterComponent implements OnInit {
   @Input() shape2class: number | string;
 
   // Instagram
-  public instagram = instagram;
+
 
   gotoTop() {
-    window.scroll({ 
-      top: 0, 
-      left: 0, 
-      behavior: 'smooth' 
+    window.scroll({
+      top: 0,
+      left: 0,
+      behavior: 'smooth'
     });
   }
 

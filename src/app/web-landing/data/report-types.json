@@ -3,10 +3,10 @@
         "id": 0,
         "icon": "flaticon-chart",
         "shadowicon": "assets/img/tp/Dieta.png",
-        "img": "assets/img/tp/m_abuso.png",
+        "img": "assets/img/tp/Dieta.png",
         "title": "Mi Dieta",
         "shortdesc": "Sed perspicia unde omnis",
-        "form_link": "/report/mes",
+        "form_link": "#",
         "description": "Manten una dieta balanceada para mejorar tu calidad de vida con una dieta personalizada de acuerdo a tu peso, edad y necesidades",
         "what_happen": "assets/img/tp/flujo-mas.png",
         "notes": [
@@ -41,7 +41,7 @@
         "img": "assets/img/tp/hos.png",
         "title": "Agendar cita en hospital",
         "shortdesc": "Sed perspicia unde omnis",
-        "form_link": "/report/esc",
+        "form_link": "#",
         "description": "Crea un cita para un chequeo de rutina con tu medico asignado ​",
         "what_happen": "assets/img/tp/flujo-es.png",
         "notes": [
@@ -76,7 +76,7 @@
         "img": "assets/img/tp/pill.png",
         "title": "Mis tratamientos medicos",
         "shortdesc": "Sed perspicia unde omnis",
-        "form_link": "/report/os",
+        "form_link": "#",
         "description": "Agenda cita con tu medico asignado para chequeos de rutina",
         "what_happen": "assets/img/tp/flujo-os.png",
         "notes": [

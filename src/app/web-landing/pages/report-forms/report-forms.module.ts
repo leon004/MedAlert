@@ -7,7 +7,7 @@ import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatRadioModule } from '@angular/material/radio';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MesComponent } from './forms/mes/mes.component';
+
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 
@@ -20,7 +20,7 @@ import { MatDialogModule } from '@angular/material/dialog';
 
 
 @NgModule({
-  declarations: [ReportFormsComponent, MesComponent, ThanksComponent],
+  declarations: [ReportFormsComponent, ThanksComponent],
   imports: [
     CommonModule,
     MesFormRoutingModule,

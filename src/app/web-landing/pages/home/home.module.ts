@@ -18,14 +18,14 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatCardModule } from '@angular/material/card';
 import { YtVideoModalComponent } from './video/yt-video-modal/yt-video-modal.component';
 import { TeamComponent } from './team/team.component';
-import { TeamModalComponent } from './team/team-modal/team-modal.component';
+
 import {MatBadgeModule} from '@angular/material/badge';
 
 import { isUndefined } from 'util';
 
 
 @NgModule({
-  declarations: [ HomeComponent, ReportComponent, VideoComponent, YtVideoModalComponent,TeamComponent, TeamModalComponent],
+  declarations: [ HomeComponent, ReportComponent, VideoComponent, YtVideoModalComponent,TeamComponent],
   imports: [
     CommonModule,
     HomeRoutingModule,

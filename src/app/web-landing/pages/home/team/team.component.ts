@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import team from '../../../data/team.json';
-import { TeamModalComponent } from './team-modal/team-modal.component';
+
 
 @Component({
   selector: 'app-team',
@@ -42,8 +42,5 @@ export class TeamComponent implements OnInit {
   }
 
 
-  openTeamModal(id){
-    const modalRef = this.modalService.open(TeamModalComponent, { size: 'lg' });
-    modalRef.componentInstance.team = team[id];
-  }
+
 }

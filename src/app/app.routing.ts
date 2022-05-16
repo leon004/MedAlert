@@ -17,16 +17,7 @@ const routes: Routes = [
     },
 
 
-  {
-    path: "auth",
-     children: [
-      {
-        path: "",
-        loadChildren: () =>
-          import("./session/session.module").then((m) => m.SessionModule),
-      },
-    ],
-  },
+
   {
     path: "**",
     redirectTo: "auth/404",
